@@ -1,0 +1,64 @@
+###
+GET http://localhost:3000/todos/?status=TO%20DO
+
+###
+GET http://localhost:3000/todos/?priority=HIGH
+
+###
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+###
+GET http://localhost:3000/todos/?category=WORK&status=DONE
+
+###
+GET http://localhost:3000/todos/?category=HOME
+
+###
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
+
+###
+GET http://localhost:3000/todos/?search_q=BUY
+
+###
+GET http://localhost:3000/todos/?status=HIGH
+
+###
+GET http://localhost:3000/todos/?priority=DONE
+
+###
+GET http://localhost:3000/todos/?category=DONE
+
+###
+GET http://localhost:3000/todos/?date=2021-12-12
+
+###
+GET http://localhost:3000/todos/8
+
+###
+GET http://localhost:3000/agenda/?date=2021-4-2
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 8,
+ "todo": "Learn DSA",
+ "priority": "HIGH",
+ "status": "IN PROGRESS",
+ "category": "HOME",
+ "dueDate": "2022-9-30"
+}
+
+###
+PUT http://localhost:3000/todos/2/
+Content-Type: application/json
+
+{ 
+    "status": "TO DO"
+}
+
+###
+DELETE http://localhost:3000/todos/8
+
+###
